@@ -1,0 +1,27 @@
+// Function Declaration
+function sum(a, b) {
+   return a + b;
+}
+sum(3, 7); // calling the function
+
+// Function Expression
+let sum = function(a, b) {
+    return a + b;
+ };
+sum(1, 3) // calling the function
+
+
+//arrow functions
+ let sum = (a, b) => a + b; // note it does not require a "return" keyword, because it is implicit
+
+ let displayA = a => alert("this is ", a);
+
+ let sayHi = () => alert("Hello!");
+
+ let sum = (a, b) => {
+   let result = a + b;
+   return result;
+};
+
+//
+var are intilizated with undefined, let and const not initialized

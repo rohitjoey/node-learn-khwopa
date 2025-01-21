@@ -16,16 +16,16 @@ fetchData();
 
 
 // Simulating an asynchronous task
-function simulateAsyncTask(myfuntion) {
+function simulateAsyncTask(callback) {
   setTimeout(() => {
     const randomNumber = Math.random();
     console.log(randomNumber);
     if (randomNumber > 0.5) {
-      console.log("Task completed successfully!")
-      // myfuntion(null, "Task completed successfully!");
+      // console.log("Task completed successfully!")
+      callback(null, "Task completed successfully!");
     } else {
-      // myfuntion(new Error("Task failed!"), null);
-      console.log("Task failed!")
+      callback(new Error("Task failed!"), null);
+      // console.log("Task failed!")
     }
   }, 2000); // Simulating a delay of 2 seconds
 }
